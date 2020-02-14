@@ -86,9 +86,9 @@ int main(int argc, char** argv){
     std::cout << "Used architecture: gpu" << std::endl;
   }
   if (type == "performance"){
-    int N = 40;
+    int N = 25;
     int matrix_size[N];
-    for (int idx=0; idx<N;idx++) matrix_size[idx] = 25*(idx+1);
+    for (int idx=0; idx<N;idx++) matrix_size[idx] = 4*(idx+1);
     double time[N];
     evaluatePerformance(operation, T, N, matrix_size, time);
     std::cout << "Performed operation: " << operation << std::endl;
